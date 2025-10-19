@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timepiece - Premium Watches</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 56px;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        
+        .watch-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+        }
+        
+        .watch-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-btn {
+            margin: 5px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+    </style>
+    <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Timepiece</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="D:\New folder\Homee.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\New folder\Aboute.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="collectionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Collection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="collectionDropdown">
+                            <li><a class="dropdown-item" href="D:\New folder\men.html">Men's Watches</a></li>
+                            <li><a class="dropdown-item" href="D:\New folder\women.html">Women's Watches</a></li>
+                            <li><a class="dropdown-item" href="D:\New folder\kids.html">Kids' Watches</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\Kainat\Desktop\Final project\Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\Kainat\Desktop\Final project\Contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Services Page Content (hidden by default) -->
+    <div id="services-page" >
+        <section class="container my-5">
+            <h1 class="text-center mb-5">Our Services</h1>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="card-title">Watch Repair</h3>
+                            <p class="card-text">Our certified watchmakers provide expert repair services for all types of watches, from battery replacements to complete overhauls. We use only genuine parts and stand behind our work with a 1-year warranty on all repairs.</p>
+                            <ul>
+                                <li>Battery replacement</li>
+                                <li>Crystal replacement</li>
+                                <li>Movement servicing</li>
+                                <li>Water resistance testing</li>
+                                <li>Band adjustment/replacement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3 class="card-title">Watch Restoration</h3>
+                            <p class="card-text">Bring new life to your cherished timepieces with our professional restoration services. Whether it's a family heirloom or a vintage find, our specialists can restore your watch to its former glory while preserving its original character.</p>
+                            <ul>
+                                <li>Case polishing/refinishing</li>
+                                <li>Dial restoration</li>
+                                <li>Hand replacement</li>
+                                <li>Vintage movement servicing</li>
+                                <li>Authentic part sourcing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3 class="card-title">Appraisal & Authentication</h3>
+                            <p class="card-text">Our experts can provide certified appraisals for insurance purposes or resale valuation. We also offer authentication services to verify the authenticity of luxury timepieces, complete with detailed documentation.</p>
+                            <ul>
+                                <li>Insurance appraisals</li>
+                                <li>Resale valuations</li>
+                                <li>Luxury watch authentication</li>
+                                <li>Certificates of authenticity</li>
+                                <li>Market value assessment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="card-title">Customization</h3>
+                            <p class="card-text">Make your watch truly unique with our customization services. From engraving to bespoke modifications, we can help you create a one-of-a-kind timepiece that reflects your personal style.</p>
+                            <ul>
+                                <li>Personal engraving</li>
+                                <li>Custom dial design</li>
+                                <li>Band customization</li>
+                                <li>Special finishes</li>
+                                <li>Bespoke watch creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body></html>

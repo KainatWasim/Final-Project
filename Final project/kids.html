@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids Watch Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Popup form style */
+    .form-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #444;
+      z-index: 1000;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      width: 300px;
+    }
+
+    .form-popup input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+
+    .form-popup button {
+      padding: 8px 15px;
+      margin-right: 5px;
+    }
+
+    /* Overlay background */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Kids Watch Collection</h1>
+    <div class="mb-3 text-center">
+      <a href="C:\Users\Kainat\Desktop\Final project\index.html" class="btn btn-secondary">Back to Collection</a>
+    </div>
+
+    <!-- Kids - Casual -->
+    <h3>Kids - Casual</h3>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://img.drz.lazcdn.com/static/pk/p/f8e12c3cb69b61973808354c9004620a.jpg_960x960q80.jpg_.webp" class="card-img-top" alt="Blue Cartoon Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Blue Cartoon Watch</h5>
+            <p class="product-price">1200</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://ae01.alicdn.com/kf/S86ed37b6e66348a7b2a78026e96b2c8e2.jpg" class="card-img-top" alt="Red Digital Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Pink Cartoon Watch</h5>
+            <p class="product-price">2000</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/61CxUFXaJ9L._AC_UL375_SR375,375_.jpg" class="card-img-top" alt="Green Analog Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Red Analog Watch</h5>
+            <p class="product-price">4000</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kids - Classic -->
+    <h3>Kids - Classic</h3>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://chrono-kids-store.com/cdn/shop/products/52_ed404786-e095-4da1-a4a5-bf408327e14f.jpg?v=1654673377" class="card-img-top" alt="Brown Leather Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Blue Leather Watch</h5>
+            <p class="product-price">13000</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.ebayimg.com/images/g/GesAAOSwKfRlbKYT/s-l1200.jpg" class="card-img-top" alt="Silver Steel Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Disney Watch</h5>
+            <p class="product-price">6000</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://image.made-in-china.com/202f0j00QvEGCsMcgior/Kids-Silicone-Quartz-Watches-Famous-Brand-New-Listing-Children-s-Watch-for-Girls-Boys-Gift-Clock-Fashion-Cute-Cartoon-Fish-Watch.webp" class="card-img-top" alt="Rainbow Silicone Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Pink Silicone Watch</h5>
+            <p class="product-price">7500</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kids - Sports -->
+    <h3>Kids - Sports</h3>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.action.pk/cdn/shop/products/qjBuWhazVE_1200x1200.jpg?v=1681119824" class="card-img-top" alt="Black Sports Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Navy Sports Watch</h5>
+            <p class="product-price">5000</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://chasevalue.pk/cdn/shop/files/IMG_5608_3f327f78-a098-49a3-aeac-c056477be2a7_grande.jpg?v=1740548987" class="card-img-top" alt="Pink Fitness Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Red Smart Watch</h5>
+            <p class="product-price">8000</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://down-ph.img.susercontent.com/file/cn-11134207-7r98o-lonts8mazafl41" class="card-img-top" alt="Navy Smart Watch" />
+          <div class="card-body text-center">
+            <h5 class="product-name">Pink Fitness Watch</h5>
+            <p class="product-price">4500</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closeForm()"></div>
+
+  <!-- Popup Form -->
+  <div class="form-popup" id="cartForm">
+    <h4>Add to Cart</h4>
+    <form id="orderForm">
+      <input type="text" id="productName" readonly />
+      <input type="text" id="productPrice" readonly />
+      <input type="text" placeholder="Your Name" required />
+      <input type="number" placeholder="Quantity" required />
+      <input type="text" placeholder="Address" required />
+      <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-danger" onclick="closeForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Attach click events to all add-to-cart buttons
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const card = this.closest('.card');
+        const name = card.querySelector('.product-name').textContent;
+        const price = card.querySelector('.product-price').textContent;
+
+        document.getElementById('productName').value = name;
+        document.getElementById('productPrice').value = "Price: " + price + " PKR";
+        openForm();
+      });
+    });
+
+    function openForm() {
+      document.getElementById('cartForm').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    function closeForm() {
+      document.getElementById('cartForm').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Handle form submission
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Order submitted!');
+      closeForm();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
